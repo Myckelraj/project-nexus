@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  background: url("image.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin-left: 10px;
+  height: 100vh;
+  color: #fff;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.665);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 450px;
+  max-width: 100%;
+}
+
+.form-wrapper {
+  padding: 35px;
+}
+
+.form-header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-header h1 {
+  margin: 0;
+}
+
+.form-header p {
+  margin: 5px 0 0;
+  font-size: 15px;
+  color: rgb(39, 244, 84);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.form-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.form-toggle button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.form-toggle button.active {
+  border-bottom: 3px solid #fff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+.form button {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #0f001e64;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.form button:hover {
+  background: #2200ff;
+}
+
+.error-messages {
+  color: #ff4d4d;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.error {
+  border: 2px solid #ff4d4d;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .container {
+    width: 100%;
+  }
+
+  .form-header h1 {
+    font-size: 45px;
+  }
+
+  .form-header p {
+    font-size: 40px;
+  }
+}
+
+/* Tablets and Smaller Laptops (Portrait Mode) */
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .form-header h1 {
+    font-size: 28px;
+  }
+
+  .form-header p {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  .form-header h1 {
+    font-size: 30px;
+  }
+
+  .form-header p {
+    font-size: 25px;
+  }
+
+  .form input {
+    font-size: 20px;
+  }
+
+  .form button {
+    font-size: 20px;
+  }
+}
